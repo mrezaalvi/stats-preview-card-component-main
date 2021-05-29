@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    font-family: Inter, "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body, .card, .card-image, ul.stat{
+    display: flex;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0;
+    padding:88px 32px;
+    box-sizing: border-box;
+    background-color:hsl(233, 47%, 7%);
+}
+
+.card{
+    flex-direction: row;
+    max-width: 1108px;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card-body{
+    padding: 70px 108px 32px 68px;
+    box-sizing: border-box;
+}
+
+h1.card-title, h3.stat-value{
+    color:hsl(0,0%,100%);
+}
+
+h1.card-title{
+    margin-bottom: 24px;
+    font-size:36px;
+    font-weight: 700;
+}
+
+p.card-text{
+    margin-bottom: 76px;
+    line-height: 24px;
+    color:hsla(0,0%,100%, 0.75);
+}
+
+.card-image{
+    display: flex;
+    background-color: hsl(277, 64%, 61%);
+}
+
+ul.stat{
+    justify-content: start;
+    list-style: none;
+    padding:0;
+}
+
+ul.stat li{
+    margin-right: 64px;
+}
+
+ul.stat h3.stat-value{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+ul.stat p.stat-heading{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: hsla(0,0%,100%,0.75);
+}
+
+.card-image img{
+    mix-blend-mode: multiply;
+    width: auto;
+    height: 100%;
+}
+
+.text-marked{
+    color: hsl(277, 64%, 61%);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+@media all and (max-width:375px){
+    .card{
+        max-width: 345px;
+        flex-direction: column-reverse;
+    }
+
+    .card-body{
+        padding: 40px 28px 22px 28px;
+        text-align: center;
+    }
+
+    h1.card-title{
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    p.card-text{
+        margin-bottom: 26px;
+        line-height: 25px;
+    }
+    ul.stat{
+        flex-direction: column;
+    }
+
+    ul.stat li{
+        margin:14px 0;
+    }
+
+    .card-image img{
+        width: 100%;
+    }
+
+}
